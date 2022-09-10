@@ -3,53 +3,84 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Social Value</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
     integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/c885f5bde3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-  <ul>
+  <ul class="menu">
     <div class="toggle">
       <ion-icon name="add-outline"></ion-icon>
     </div>
-    <li>
+    <li style="--i: 0;">
+        <a href="index.html">
+            <ion-icon name="home-outline"></ion-icon>
+        </a>
+    </li>
+    <li style="--i: 1;">
       <a href="#">
         <i class="fa-solid fa-person"></i>
       </a>
     </li>
-    <li>
+    <li style="--i: 2;">
       <a href="#">
         <ion-icon name="location-outline"></ion-icon>
       </a>
     </li>
-    <li>
+    <li style="--i: 3;">
       <a href="#">
         <i class="fa-solid fa-triangle-exclamation"></i>
       </a>
     </li>
-    <li>
+    <li style="--i: 4;">
       <a href="#">
         <i class="fa-solid fa-dollar-sign"></i>
       </a>
     </li>
-    <li>
+    <li style="--i: 5;">
       <a href="#">
         <i class="fa-solid fa-heart-pulse"></i>
       </a>
     </li>
-    <li>
+    <li style="--i: 6;">
       <a href="#">
 
       </a>
     </li>
-    <li>
+    <li style="--i: 7;">
       <a href="#">
         <i class="fa-solid fa-briefcase"></i>
       </a>
     </li>
-    <li>
+    <li style="--i: 8;">
+      <a href="#">
+        <i class="fa-solid fa-tree"></i>
+      </a>
+    </li>
+    <li style="--i: 9;">
+      <a href="#">
+        <i class="fa-solid fa-tree"></i>
+      </a>
+    </li>
+    <li style="--i: 10;">
+      <a href="#">
+        <i class="fa-solid fa-tree"></i>
+      </a>
+    </li>
+    <li style="--i: 11;">
+      <a href="#">
+        <i class="fa-solid fa-tree"></i>
+      </a>
+    </li>
+    <li style="--i: 12;">
+      <a href="#">
+        <i class="fa-solid fa-tree"></i>
+      </a>
+    </li>
+    <li style="--i: 13;">
       <a href="#">
         <i class="fa-solid fa-tree"></i>
       </a>
@@ -57,6 +88,13 @@
   </ul>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    let toggle = document.querySelector('.toggle');
+    let menu = document.querySelector('.menu');
+    toggle.onclick = function(){
+      menu.classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>
