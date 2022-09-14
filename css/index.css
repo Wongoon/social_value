@@ -41,6 +41,15 @@ body{
     color: #111;
     transition: 0.5s;
 }
+.number{
+    display: none;
+}
+.menu.active li a::after{
+    content: var(--i);
+    position: relative;
+    color: #aaa;
+    transform: rotate(calc(360deg / -13 * (var(--i) - 1) - 90deg));
+}
 .toggle:hover{
     color: #ff1252;
 }
@@ -48,6 +57,7 @@ body{
     color:#ff1252;
 }
 .menu li a ion-icon, i{
+    position: relative;
     font-size:2em;
 }
 .toggle{
