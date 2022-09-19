@@ -1,108 +1,100 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Social Value</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
-    integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/1224168b11.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <title>Social Value</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="javascript/jquery-1.12.3.js"></script>
+    <script src="javascript/tabmenu.js"></script>
+    <script src="https://kit.fontawesome.com/1224168b11.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <ul class="menu">
-    <div class="toggle">
-      <ion-icon name="add-outline"></ion-icon>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </span>
+                <div class="text logo-text">
+                    <span class="name">Social Value</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-right toggle"></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link current" data-tab="tab0">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Home</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab1">
+                            <i class="fa-solid fa-user-shield icon"></i>
+                            <span class="text nav-text">인권의 보호</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab2">
+                            <i class="fa-solid fa-location-dot icon"></i>
+                            <span class="text nav-text">지역 사회 활성화</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab3">
+                            <i class="fa-solid fa-triangle-exclamation icon"></i>
+                            <span class="text nav-text">안전한 근로 환경</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab4">
+                            <i class="fa-solid fa-dollar-sign icon"></i>
+                            <span class="text nav-text">지역 경제 공헌</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab5">
+                            <i class="fa-solid fa-heart-pulse icon"></i>
+                            <span class="text nav-text">보건 복지의 제공</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab6">
+                            <i class="fa-solid fa-network-wired icon"></i>
+                            <span class="text nav-text">기업의 사회적 책임</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab7">
+                            <i class="fa-solid fa-briefcase icon"></i>
+                            <span class="text nav-text">노동권의 보장</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab8">
+                            <i class="fa-solid fa-tree icon"></i>
+                            <span class="text nav-text">환경의 지속 가능성</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab9">
+                            <i class="fa-solid fa-wheelchair icon"></i>
+                            <span class="text nav-text">사회적 약자 기회 제공</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab10">
+                            <i class="fa-solid fa-comment icon"></i>
+                            <span class="text nav-text">민주적 의사 결정</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab11">
+                            <i class="fa-solid fa-building icon"></i>
+                            <span class="text nav-text">기업간의 상생과 협력</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab12">
+                            <i class="fa-solid fa-globe icon"></i>
+                            <span class="text nav-text">공동체의 이익 실현</span>
+                    </li>
+                    <li class="nav-link" data-tab="tab13">
+                            <i class="fa-solid fa-seedling icon"></i>
+                            <span class="text nav-text">양질의 일자리 창출</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="tab0" class="tab-content active">
+            <div class="text">Dashboard Sidebar</div>
+        </section>
+        <section id="tab1" class="tab-content">
+            <div class="text">Tab2</div>
+        </section>
     </div>
-    <li style="--i: 1;">
-      <a href="#">
-        <i class="fa-solid fa-user-shield" style="left: 5px;"></i>
-      </a>
-      <div class="number">1</div>
-    </li>
-    <li style="--i: 2;">
-      <a href="#">
-        <i class="fa-solid fa-location-dot"></i>
-      </a>
-      <div class="number">2</div>
-    </li>
-    <li style="--i: 3;">
-      <a href="#">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-      </a>
-      <div class="number">3</div>
-    </li>
-    <li style="--i: 4;">
-      <a href="#">
-        <i class="fa-solid fa-dollar-sign"></i>
-      </a>
-      <div class="number">4</div>
-    </li>
-    <li style="--i: 5;">
-      <a href="#">
-        <i class="fa-solid fa-heart-pulse"></i>
-      </a>
-      <div class="number">5</div>
-    </li>
-    <li style="--i: 6;">
-      <a href="#">
-        <i class="fa-solid fa-network-wired"></i>
-      </a>
-      <div class="number">6</div>
-    </li>
-    <li style="--i: 7;">
-      <a href="#">
-        <i class="fa-solid fa-briefcase"></i>
-      </a>
-      <div class="number">7</div>
-    </li>
-    <li style="--i: 8;">
-      <a href="#">
-        <i class="fa-solid fa-tree"></i>
-      </a>
-      <div class="number">8</div>
-    </li>
-    <li style="--i: 9;">
-      <a href="#">
-        <i class="fa-solid fa-wheelchair"></i>
-      </a>
-      <div class="number">9</div>
-    </li>
-    <li style="--i: 10;">
-      <a href="#">
-        <ion-icon name="chatbubble"></ion-icon>
-      </a>
-      <div class="number">10</div>
-    </li>
-    <li style="--i: 11;">
-      <a href="#">
-        <i class="fa-solid fa-building"></i>
-      </a>
-      <div class="number">11</div>
-    </li>
-    <li style="--i: 12;">
-      <a href="#">
-        <i class="fa-solid fa-globe"></i>
-      </a>
-      <div class="number">12</div>
-    </li>
-    <li style="--i: 13;">
-      <a href="#">
-        <i class="fa-solid fa-seedling"></i>
-      </a>
-      <div class="number">13</div>
-    </li>
-  </ul>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    let toggle = document.querySelector('.toggle');
-    let menu = document.querySelector('.menu');
-    toggle.onclick = function(){
-      menu.classList.toggle('active');
-    }
-  </script>
+    <script src="javascript/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
