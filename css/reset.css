@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
-    font-family: 'NanumSquare', 'Poppins', 'Roboto', sans-serif;
+    font-family: 'Pretendard-Regular', 'Poppins', 'Roboto', sans-serif;
     box-sizing: border-box;
     color: #000;
 }
