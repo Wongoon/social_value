@@ -31,6 +31,10 @@ body{
     background: transparent;
     transition: all 0.3s ease;
     cursor: pointer;
+    border: 1px solid #ccc;
+}
+.sidebar.close li{
+    border-color: #fff;
 }
 .sidebar header .image,
 .sidebar .icon{
@@ -137,19 +141,17 @@ header .image-text .name {
     top: 0;
     left: 250px;
     height: 100vh;
+    font-weight: 500;
     width: calc(100% - 250px);
     background: var(--body-clr);
+    color: var(--text-clr);
     transition: 0.5s all ease;
-}
-.container .tab-content.active{
-    display: flex;
 }
 .container .tab-content{
     display: none;
 }
-.container{
-    font-weight: 500;
-    color: var(--text-clr);
+.container .tab-content.active{
+    display: flex;
 }
 .sidebar.close ~ .container{
     left: 78px;
