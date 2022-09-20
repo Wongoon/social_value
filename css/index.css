@@ -26,3 +26,6 @@
     bottom: 10px;
     cursor: pointer;
 }
+.container section{
+    transition: all 0.5s eases;
+}
