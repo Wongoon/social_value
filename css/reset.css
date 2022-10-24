@@ -13,7 +13,6 @@
     font-family: 'Pretendard-Regular', 'Poppins', 'Roboto', sans-serif;
     box-sizing: border-box;
     color: #000;
-    user-select: none;
 }
 :root{
     --r: #f55;
