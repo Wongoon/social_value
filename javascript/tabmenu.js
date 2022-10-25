@@ -8,4 +8,14 @@ jQuery(document).ready(function(){
         $(this).addClass('current');
         $("#"+tab_id).addClass('active');
     });
+
+    $('ul.tab-nav li').click(function(){
+        var tabid = $(this).attr('data-nav');
+
+        $('section.active .tab-nav li').removeClass('on');
+        $('section.active .tab-contents').removeClass('on');
+
+        $(this).addClass('on');
+        $('section.active #'+tabid).addClass('on');
+    })
 });
