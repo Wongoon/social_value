@@ -6,26 +6,27 @@
     min-height: 100vh;
 }
 .tab-content div{
-    margin-bottom: 30px;
     line-height: 1.3em;
+}
+.tab-content .subtitle:nth-child(2){
+    margin-bottom: 30px;
 }
 .title{
     font-size: 3em;
     text-align: center;
 }
-.contents{
+.contents, .subtitle{
     font-size: 2em;
     text-align: center;
 }
-
 .fixed{
     color: var(--text-clr);
     font-size: 1.2em;
-    position: fixed;
+    position: absolute;
     right: 10px;
     bottom: 10px;
     cursor: pointer;
 }
 .container section{
-    transition: all 0.5s eases;
+    transition: all 0.5s;
 }

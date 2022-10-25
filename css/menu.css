@@ -147,13 +147,48 @@ header .image-text .name {
     transition: 0.5s all ease;
 }
 .container .tab-content{
-    display: none;
+    display: flex;
+    visibility: hidden;
+    height: 0vh;
 }
 .container .tab-content.active{
-    display: flex;
+    visibility: visible;
+    height: 100vh;
 }
 .sidebar.close ~ .container{
     left: 78px;
     height: 100vh;
     width: calc(100% - 78px);
+}
+.tab-nav{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.tab-nav li.list{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-clr-light);
+    border-bottom: 2px solid transparent;
+    font-size: 2em;
+    transition: 0.5s all;
+}
+.tab-nav li.list.on,
+.tab-nav li.list:hover{
+    color: var(--primary-clr);
+    border-bottom: 2px solid var(--primary-clr);
+}
+.tab-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100% - 100px);
+    width: 100%;
 }
