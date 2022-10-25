@@ -1,6 +1,6 @@
 @import url(menu.css);
 .tab-content{
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
@@ -35,15 +35,8 @@
     bottom: 10px;
     cursor: pointer;
 }
-.container section{
-    transition: all 0.5s;
-}
 #tab2 .subtitle{
     margin-top: 20px;
     text-align: center;
     font-size: 1.5em;
-}
-#tab3{
-    height: calc(100% - 100px);
-    border: 1px solid #333;
 }

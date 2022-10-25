@@ -153,9 +153,9 @@ header .image-text .name {
     display: flex;
 }
 .sidebar.close ~ .container{
-    left: 78px;
+    left: 88px;
     height: 100vh;
-    width: calc(100% - 78px);
+    width: calc(100% - 88px);
 }
 .tab-nav{
     width: 50%;
@@ -188,8 +188,8 @@ header .image-text .name {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: calc(100% - 100px);
     width: 100%;
+    height: calc(100vh - 100px);
 }
 .tab-contents.on{
     display: flex;
