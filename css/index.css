@@ -5,6 +5,9 @@
     flex-direction: column;
     min-height: 100vh;
 }
+#tab-0.tab-content{
+    justify-content: center;
+}
 .tab-content div{
     line-height: 1.3em;
 }
