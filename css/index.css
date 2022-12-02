@@ -26,6 +26,10 @@
 #tab2 .title{
     font-size: 3em;
 }
+#tab3 .title{
+    font-size: 3em;
+    margin: 50px 0;
+}
 .contents, #tab-0 .subtitle{
     font-size: 2em;
     text-align: center;
@@ -34,7 +38,7 @@
     color: var(--text-clr);
     font-size: 1.2em;
     position: absolute;
-    right: 10px;
+    right: 25px;
     bottom: 10px;
     cursor: pointer;
 }
@@ -42,4 +46,51 @@
     margin-top: 20px;
     text-align: center;
     font-size: 1.5em;
+}
+#tab3{
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 20px 0 40px 0;
+    word-break: keep-all;
+}
+#tab3 .img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#tab3 .img .img_title{
+    text-align: center;
+    font-size: 2em;
+}
+#tab3 .img .img_title::before{
+    content: '\0027\0020';
+}
+#tab3 .img .img_title::after{
+    content: '\0020\0027';
+}
+#tab3 .img .image{
+    height: 260px;
+    margin: 20px;
+}
+#tab3 .img .image{
+    height: 260px;
+    object-fit: contain;
+}
+#tab3 .content_container{
+    width: 1000px;
+    font-size: 1.5em;
+}
+#tab3 .content_container .content{
+    margin-bottom: 32px;
+}
+#tab3 .content_container .list > li{
+    list-style: inside disc;
+}
+#tab3 .content_container .list .list_list{
+    margin-left: 29px;
+}
+#tab3 .content_container .list .list_list > li{
+    list-style: inside "-\0020";
+    font-size: 0.8em;
 }
